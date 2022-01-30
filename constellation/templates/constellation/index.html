@@ -4,13 +4,16 @@
 {%block body%}
 
 <div class="title">Upload constellation</div>
-<form class="myform" id="myform" action="{% url 'constellation:possibilities' %}" method="post">
+<form class="myform" id="myform" enctype="multipart/form-data" action="{% url 'constellation:possibilities' %}" method="post">
     {% csrf_token %}
-    <p>Enter directory of image</p>
-    <input type="text" class="field" name="url"></input><br>
+    <p>Upload your picture the constellation</p>
+    
+    <input type="file" name="upload" accept="image/*">
     <p>Current hemisphere</p>
     <input type="radio" class="radio" name="hemisphere" value="north">North</input>
     <input type="radio" class="radio" name="hemisphere" value="south">South</input><br>
     <input type="submit" class="submit"></input>
 </form>
 {%endblock %}
+
+<input type="text" class="field" name="url"></input><br>

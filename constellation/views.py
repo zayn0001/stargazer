@@ -2,6 +2,7 @@ from django.shortcuts import render
 import constellation
 from constellation.prediction import *
 from django import forms
+from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
 
@@ -12,13 +13,17 @@ def index(request):
 
 def possibilities(request):
     if request.method == "POST":
-        print("hererer")
+        #print("hererer")
         form = dict(request.POST)
         print(form)
-        print("SDfsdfs")
-        url = form["url"][0]
+        upload = request.FILES['upload']
+        fss = FileSystemStorage()
+        file = fss.save(upload.name, upload)
+        file_url = fss.url(file)
+        #print("SDfsdfs")
+        print(file_url)
         hemisphere = form["hemisphere"][0]
-        predictions = runthis(url, hemisphere)
+        predictions = runthis(file_url, hemisphere)
         sources = [f"constellation/images/{prediction}.png" for prediction in predictions]
         print(sources)
         

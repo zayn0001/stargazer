@@ -14,7 +14,11 @@ class Star:
 
 def get_normed_predictors(file, rotat=0, resize=True):
     predictorlist = []
+    #if type(file) == "str":
     im = Image.open(file)
+    #else:
+    #    im = file
+
     im = im.convert("RGBA")
     enhancer = ImageEnhance.Brightness(im)
     im = enhancer.enhance(2.0)

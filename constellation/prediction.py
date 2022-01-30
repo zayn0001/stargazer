@@ -54,7 +54,7 @@ from sklearn.ensemble import RandomForestClassifier
 def runthis(url, hemisphere):
     #url = "C://Users//Mishal//Desktop//testpics//andromedatest.png"
     #hemisphere = "north"
-
+    
     testdata = methods.get_normed_predictors(url)
     testdata = [testdata]
     testnorth = hemisphere == "north"
