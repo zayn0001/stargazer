@@ -1,0 +1,23 @@
+{% extends "constellation/layout.html"%}
+{%block body%}
+{% load static %}
+
+{% csrf_token %}
+<div class="header"></div>
+<div class = "solimagediv">
+<img class = "solimage" src="{% static solutionimg %}" width="200px" height="160px">
+</div>
+<div class= "content">
+</div>
+
+<script>
+    $ajaxUtils.sendGetRequest("{% static 'constellation/star-data.json'%}", 
+    function(res){
+        consname = res["{{solname}}"].name
+        conscontent = res["{{solname}}"].desc
+        document.querySelector(".header").innerHTML = consname
+        document.querySelector(".content").innerHTML = conscontent
+    })
+</script>
+
+{%endblock %}

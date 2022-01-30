@@ -1,0 +1,16 @@
+{% extends "constellation/layout.html"%}
+
+
+{%block body%}
+
+<div class="title">Upload constellation</div>
+<form class="myform" id="myform" action="{% url 'constellation:possibilities' %}" method="post">
+    {% csrf_token %}
+    <p>Enter directory of image</p>
+    <input type="text" class="field" name="url"></input><br>
+    <p>Current hemisphere</p>
+    <input type="radio" class="radio" name="hemisphere" value="north">North</input>
+    <input type="radio" class="radio" name="hemisphere" value="south">South</input><br>
+    <input type="submit" class="submit"></input>
+</form>
+{%endblock %}

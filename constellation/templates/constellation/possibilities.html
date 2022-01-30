@@ -1,0 +1,27 @@
+{% extends "constellation/layout.html"%}
+{%block body%}
+{% load static%}
+
+
+
+<div class="title">Click on the constellation that accurately resembles yours</div>
+<form action="{% url 'constellation:solution' %}" id="possform" method="post">
+    {% csrf_token %}
+    <div class ="container">
+    <div class="poss" >
+    <object class="possimg" data="{% static predimg1 %}" name={{name1}} onclick="submitthis('{{name1}}')"></object>
+    </div>
+    <div class="poss" >
+    <object class="possimg" data="{% static predimg2 %}" name={{name2}} onclick="submitthis('{{name2}}')"></object>
+    </div>
+    <div class="poss" >
+    <object class="possimg" data="{% static predimg3 %}" name={{name3}} onclick="submitthis('{{name3}}')"></object>
+    </div>
+    <div class="poss" >
+    <object class="possimg" data="{% static predimg4 %}" name={{name4}} onclick="submitthis('{{name4}}')"></object>
+    </div>
+    <input type="hidden" name="solution" value="">
+</div>
+</form>
+
+{%endblock %}

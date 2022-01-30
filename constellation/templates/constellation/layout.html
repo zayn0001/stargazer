@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stargazer</title>
+        {% load static %}
+        <link href="{% static 'constellation/styles.css' %}" rel="stylesheet">
+        <script src="{% static 'constellation/script.js' %}"></script>
+        <script  src="{% static 'constellation/ajax-utils.js' %}"></script>
+        
+    </head>
+    <body>
+        {% block body%}
+        
+        {%endblock%}
+    </body>
+</html>

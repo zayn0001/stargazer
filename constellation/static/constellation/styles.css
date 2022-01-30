@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+	font-size: 2.5vw;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	width: 80vw;
+	height: 64vw;
+}
+
+.possimg {
+    vertical-align: middle;
+    height:100%;
+    width:100%;
+}
+
+.poss {
+	width: 47%;
+	text-align: -webkit-center;
+	height: 47%;
+	padding: 1vw;
+}
+
+.title {
+	height:8vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+	background-image: url("others/spacebackground.jpg");
+	background-attachment: fixed;  
+    background-size: cover;
+}
+
+.submit {
+	margin-top: 1.2vw;
+	color: darkblue;
+}
+
+.radio {
+	margin: 0px;
+	margin-right: 2px;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.header {
+	text-align: center;
+    font-size: 7vw;
+    margin-bottom: 10px;
+}
+
+.solimagediv {
+	text-align: -webkit-center;
+	margin-bottom: 15px;
+}
+
+.solimage {
+    width: 50vw;
+    height: 40vw;
+}
+
+.content {
+	text-align: center;
+	font-size: smaller;
+	padding: 10px;
+}
+
+.field {
+	width: 45vw;
+    font-size: medium;
+    height: 4vw;
+	color: black;
+}

@@ -1,0 +1,42 @@
+{
+    "andromeda":{
+        "name":"Andromeda",
+        "desc":"Andromeda is the daughter of Cassiopeia and Cepheus in Greek mythology.<br><br>Unfortunately, appeasing the gods, she was chained and fed to the sea monster Cetus.<br><br>However, Perseus finally rescued her."
+    },
+    "antlia":{
+        "name":"Antlia",
+        "desc":"It was initially named Antlia Pneumatica, or “Pneumatic Machine,” by French astronomer Nicolas Louis de Lacaille.<br><br>Actually, this unusual name honored French physicist Denis Papin’s invention of the air pump."
+    },
+    "apus":{
+        "name":"Apus",
+        "desc":"Greek for “no feet,” Apus is the official bird of paradise.<br><br>Ironically, this name mocks western civilization’s misconception of the paradise bird not having feet.<br><br>Who knew!?"
+    },
+    "aquarius":{
+        "name":"Aquarius",
+        "desc":"Water carrier of the gods, Aquarius was the best-looking boy in ancient Greece.<br><br>In fact, Zeus became enthralled with Aquarius, morphed into an eagle, and abducted the boy."
+    },
+    "aquila":{
+        "name":"Aquila",
+        "desc":"Aquila was the majestic eagle who help Zeus’ thunderbolts.<br><br>However, this meaning is often associated with the legendary eagle who abducted Aquarius "
+    },
+    "ara":{
+        "name":"Ara",
+        "desc":"Ara was the altar in which Greek gods formed a pact before battling the Titans.<br><br>Led by Zeus, the gods overpowered the Titans, winning the legendary war. Ultimately, the altar was placed in the sky by Zeus.<br><br>In fact, the Milky Way represents the smoke rising from Ara."
+    },
+    "aries":{
+        "name":"Aries",
+        "desc":"Aries was a legendary ram, yielding wings and golden fleece.<br><br>Nephele originally sent him to rescue her son, Phrixus, upon his father sacrificing him to ward off famine.<br><br>Ultimately, both Phrixus and his sister, Helle, boarded Aries, flying to safety on the Black Sea."
+    },
+    "auriga":{
+        "name":"Auriga",
+        "desc":"Son of Athena, Auriga was the charioteer of the gods.<br><br>Plus, created in the image of the Sun god’s chariot, Auriga invented the four-horse chariot."
+    },
+    "bootes":{
+        "name":"Boötes",
+        "desc":"Greek for “oxen driver,” Boötes was the plowman who corralled oxen, often represented by Ursa Major, the bear."
+    },
+    "ursa_major":{
+        "name":"Ursa Major",
+        "desc":"One of the oldest constellations, Ursa Major, the big bear, is widely known across many cultures and mythologies.<br><br>In Greek mythology, Zeus falls in love with the nymph, Callisto.<br><br>However, Zeus’ wife Hera turns the nymph into a bear."
+    }
+}
